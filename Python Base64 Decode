@@ -1,0 +1,7 @@
+#!/usr/bin/python
+
+import Base64
+
+coded = '<base64 string>'
+
+print (base64.b64decode(coded))

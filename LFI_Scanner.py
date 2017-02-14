@@ -295,9 +295,7 @@ for  fileCheck, fileRegexp in CHECK.items():
                         if sentinel > 1:
                                 print('[+] '+PROTO+URL+':'+str(PORT)+'/'+TARGET+PATHTRAV+FILE+'\t <--- FOUND')
                                 found = found + 1
-                        #else:
-                                #print('[+] '+PROTO+URL+':'+str(PORT)+'/'+TARGET+PATHTRAV+FILE)
-
+                  
                 # HTTP error - 4xx, 5xx
                 except urllib2.HTTPError:
                         print('[+] '+PROTO+URL+':'+str(PORT)+'/'+TARGET+PATHTRAV+FILE)
@@ -343,10 +341,7 @@ if found < 1:
 				        if sentinels > 1:
 				                print('[+] '+PROTO+URL+':'+str(PORT)+'/'+TARGET+PATHTRAV+FILE+NULL+'\t <--- FOUND')
 				                founds = founds + 1
-				        #else:
-				                #print('[+] '+PROTO+URL+':'+str(PORT)+'/'+TARGET+PATHTRAV+FILE)
-						#print('[+] Nothing Here')
-
+				        
 				# HTTP error - 4xx, 5xx
 				except urllib2.HTTPError:
 				        print('[+] '+PROTO+URL+':'+str(PORT)+'/'+TARGET+PATHTRAV+FILE+NULL)
